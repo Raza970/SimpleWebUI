@@ -7,7 +7,7 @@ import {
   HStack,
   SimpleGrid,
   Text,
-  useColorMode
+  useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
 import { BiRocket } from "react-icons/bi";
@@ -18,26 +18,36 @@ import { RxCode } from "react-icons/rx";
 export default function Feature() {
   const { colorMode } = useColorMode();
   return (
-    
-    <Box mb={"20px"}
-    borderRadius={"16px"}
-    overflow="hidden"
-    boxShadow={
-      " 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);"
-    } py="50" as="section"
-    
-    bg={colorMode == "dark" ? "blackAlpha.200" : "white"}
-    // textColor={colorMode == "dark" ? "white" : "black"}
-    color={colorMode == "dark" ? "white" : "black"}
+    <Box
+      mb={"20px"}
+      borderRadius={"16px"}
+      overflow="hidden"
+      boxShadow={
+        " 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);"
+      }
+      py="50"
+      as="section"
+      bg={colorMode == "dark" ? "blackAlpha.200" : "white"}
+      // textColor={colorMode == "dark" ? "white" : "black"}
+      color={colorMode == "dark" ? "white" : "black"}
     >
-
       {/* top headers */}
-      <Box textAlign={"center"}>
+      <Box
+        textAlign={{
+          base: "center", // 0-48em
+          lg: "center", // 48em-80em,
+        }}
+        px={{ base: "30", lg: "44" }}
+      >
         <Heading
+          fontSize={{
+            base: "40px", // 0-48em
+            lg: "52px", // 48em-80em,
+          }}
           bgGradient="linear(to-l, #7928CA, #FF0080)"
           bgClip="text"
           fontStyle={"italic"}
-          fontSize="52px"
+          // fontSize="52px"
           fontWeight="extrabold"
         >
           What you can expect?
@@ -158,6 +168,6 @@ export default function Feature() {
           {/* 6 features ends */}
         </Box>
       </Container>
-      </Box>
+    </Box>
   );
 }

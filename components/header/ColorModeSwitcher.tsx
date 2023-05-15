@@ -18,8 +18,8 @@ import {
         size="md"
         fontSize="lg"
         variant="ghost"
-        color="current"
-        marginRight="1"
+        // color="current"
+        // marginRight="1"
         onClick={toggleColorMode}
         alignItems="center"
         icon={<SwitchIcon />}
@@ -28,6 +28,7 @@ import {
         alignSelf="flex-end"
         rounded={50}
         bgColor="gray.100"
+        // color="red"
         // mt="4"
       />
     );

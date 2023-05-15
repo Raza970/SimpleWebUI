@@ -60,6 +60,7 @@ export default function Header() {
           <Show below="md">
             <Burger />
           </Show>
+          <Hide below="lg">
           <Link href="http://piaic.org/" target={"_blank"}>
             <Button
               // variant={"outline"}
@@ -69,7 +70,9 @@ export default function Header() {
               Go to Piaic
             </Button>
           </Link>
+          </Hide>
 
+          <Hide below="lg">
           <Menu>
             <MenuButton
               bgGradient="linear(to-l, #7928CA, #FF0080)"
@@ -80,14 +83,27 @@ export default function Header() {
               Courses
             </MenuButton>
             <MenuList>
+              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
               <MenuItem>Web 3.0 and Metaverse Developer</MenuItem>
+              </Link>
+              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
               <MenuItem>Artificial Intelligence </MenuItem>
+              </Link>
+              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
               <MenuItem>Cloud-native Computing</MenuItem>
+              </Link>
+              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
               <MenuItem>Ambient Computing and IoT</MenuItem>
+              </Link>
+              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
               <MenuItem>Genomics and Bioinformatics</MenuItem>
+              </Link>
+              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
               <MenuItem>Network Programmability and Automation</MenuItem>
+              </Link>
             </MenuList>
           </Menu>
+          </Hide>
         </HStack>
       </Flex>
     </Box>

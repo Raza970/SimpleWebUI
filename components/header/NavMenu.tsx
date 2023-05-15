@@ -30,11 +30,11 @@ export default function NavMenu({ horizontal = true }) {
             Home
           </Link>
           <ListItem></ListItem>
-          <Link href="/about" target={"_blank"}>
+          <Link href="https://www.piaic.org/" target={"_blank"}>
             About
           </Link>
 
-          <Link href="/Contact" target={"_blank"}>
+          <Link href="https://www.facebook.com/groups/piaic/posts/332460671001718/" target={"_blank"}>
             Contact
           </Link>
 

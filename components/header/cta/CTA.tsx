@@ -14,7 +14,9 @@ export default function CTA() {
   const { colorMode } = useColorMode();
 
   return (
-    <Box mb={"20px"}>
+    <Box
+      mb={"20px"}
+    >
       <Container
         maxW={1200}
         borderRadius={"10px"}
@@ -26,7 +28,7 @@ export default function CTA() {
         p="10"
       >
         <Stack direction={{ base: "column", md: "row" }}>
-          <Box flex={3}>
+          <Box  flex={3}>
             <Heading fontStyle={"inherit"}>Try our free components</Heading>
             <Text fontSize={"20px"} fontWeight={"semibold"} color={"gray.500"}>
               You don&apos;t have to buy a pig in a poke - you can experience
@@ -34,7 +36,18 @@ export default function CTA() {
             </Text>
           </Box>
 
-          <Box flex={1} alignSelf="flex-end">
+          <Box
+            textAlign={{
+              base: "center", // 0-48em
+              lg: "center", // 48em-80em,
+            }}
+            flex={1}
+            alignSelf={{
+              base: "center", // 0-48em
+              lg: "flex-end", // 48em-80em,
+            }}
+            // alignSelf="flex-end"
+          >
             <Button
               bgGradient="linear(to-l, #7928CA, #FF0080)"
               colorScheme={"gray"}

@@ -31,12 +31,22 @@ export default function Highlights() {
       as="section"
     >
       {/* top headers */}
-      <Box textAlign={"center"}>
+      <Box
+        textAlign={{
+          base: "center", // 0-48em
+          lg: "center", // 48em-80em,
+        }}
+        px={{ base: "30", lg: "44" }}
+      >
         <Heading
+          fontSize={{
+            base: "20px", // 0-48em
+            lg: "30px", // 48em-80em,
+          }}
           bgGradient="linear(to-l, #7928CA, #FF0080)"
           bgClip="text"
           fontStyle={"italic"}
-          fontSize="25px"
+          // fontSize="25px"
           fontWeight="extrabold"
         >
           Core Courses <br /> (Common in All Specializations)
@@ -46,7 +56,7 @@ export default function Highlights() {
           following three core courses.
         </Text>
       </Box>
-      <Container maxW={1000}>
+      <Container maxW={1020}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={5}>
           <Card
             align="center"
@@ -64,12 +74,7 @@ export default function Highlights() {
               </Heading>
             </CardHeader>
             <CardBody>
-              <Text
-                
-                align={"center"}
-                fontWeight={"semibold"}
-                color={"gray.500"}
-              >
+              <Text align={"center"} fontWeight={"semibold"} color={"gray.500"}>
                 CS-101: Object-Oriented Programming using TypeScript
               </Text>
             </CardBody>
