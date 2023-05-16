@@ -11,15 +11,17 @@ import {
   export const ColorModeSwitcher = (props: ColorModeSwitcherProps) => {
     const { toggleColorMode } = useColorMode();
     const text = useColorModeValue("dark", "white");
-    const SwitchIcon = useColorModeValue(FaMoon, FaSun);
+    // const SwitchIcon = useColorModeValue(FaMoon, FaSun);
+    const SwitchIcon = useColorModeValue<typeof FaMoon, typeof FaSun>(FaMoon, FaSun);
   
     return (
       <IconButton
-        size="md"
+        // size="md"
+        // size={"md" as "sm" | "md" | "lg"}
         fontSize="lg"
         variant="ghost"
-        // color="current"
-        // marginRight="1"
+        color="current"
+        marginRight="1"
         onClick={toggleColorMode}
         alignItems="center"
         icon={<SwitchIcon />}
