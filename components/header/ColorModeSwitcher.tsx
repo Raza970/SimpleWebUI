@@ -17,7 +17,7 @@ import {
     return (
       <IconButton
         // size="md"
-        // size={"md" as "sm" | "md" | "lg"}
+        size={"md" as "sm" | "md" | "lg"}
         fontSize="lg"
         variant="ghost"
         color="current"
