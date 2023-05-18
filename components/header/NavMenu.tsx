@@ -29,7 +29,7 @@ export default function NavMenu({ horizontal = true }) {
           <Link href="/" target={"_blank"}>
             Home
           </Link>
-          <ListItem></ListItem>
+          {/* <ListItem></ListItem> */}
           <Link href="https://www.piaic.org/" target={"_blank"}>
             About
           </Link>
@@ -44,12 +44,24 @@ export default function NavMenu({ horizontal = true }) {
                 Courses
               </MenuButton>
               <MenuList>
-                <MenuItem>Web 3.0 and Metaverse Developer</MenuItem>
-                <MenuItem>Artificial Intelligence </MenuItem>
-                <MenuItem>Cloud-native Computing</MenuItem>
-                <MenuItem>Ambient Computing and IoT</MenuItem>
-                <MenuItem>Genomics and Bioinformatics</MenuItem>
-                <MenuItem>Network Programmability and Automation</MenuItem>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Web 3.0 and Metaverse Developer</MenuItem>
+              </Link>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Artificial Intelligence </MenuItem>
+              </Link>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Cloud-native Computing</MenuItem>
+              </Link>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Ambient Computing and IoT</MenuItem>
+              </Link>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Genomics and Bioinformatics</MenuItem>
+              </Link>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Network Programmability and Automation</MenuItem>
+              </Link>
               </MenuList>
             </Menu>
           </Show>

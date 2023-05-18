@@ -16,6 +16,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Heading,
 } from "@chakra-ui/react";
 import { SearchIcon, MoonIcon } from "@chakra-ui/icons";
 import React from "react";
@@ -83,23 +84,24 @@ export default function Header() {
               Courses
             </MenuButton>
             <MenuList>
-              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
-              <MenuItem>Web 3.0 and Metaverse Developer</MenuItem>
+              {/* <Heading as='h3' size='lg'>Courses</Heading> */}
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Web 3.0 and Metaverse Developer</MenuItem>
               </Link>
-              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
-              <MenuItem>Artificial Intelligence </MenuItem>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Artificial Intelligence </MenuItem>
               </Link>
-              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
-              <MenuItem>Cloud-native Computing</MenuItem>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Cloud-native Computing</MenuItem>
               </Link>
-              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
-              <MenuItem>Ambient Computing and IoT</MenuItem>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Ambient Computing and IoT</MenuItem>
               </Link>
-              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
-              <MenuItem>Genomics and Bioinformatics</MenuItem>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Genomics and Bioinformatics</MenuItem>
               </Link>
-              <Link href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
-              <MenuItem>Network Programmability and Automation</MenuItem>
+              <Link color='teal.500' href="https://panaverse-dao-staging.vercel.app/core-track/q1" target={"_blank"}>
+              <MenuItem fontWeight={"bold"}>Network Programmability and Automation</MenuItem>
               </Link>
             </MenuList>
           </Menu>
